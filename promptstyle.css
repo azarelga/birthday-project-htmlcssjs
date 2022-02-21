@@ -1,0 +1,32 @@
+* {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+body {
+	background-color: hotpink;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.frame{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.frame>*{
+    flex: 1 1 50%;
+}
+.button {
+    background-color: white;
+    border :none;
+    color: black;
+    padding: 100% 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    opacity: 0;
+    cursor: pointer;
+}

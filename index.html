@@ -14,11 +14,21 @@
         <div id="content">
             <div id="code">
                 <br/> <br /><br />
-                <span class="typing">22 February 2003, is the day you were born.</span><br/>
-
+                <span class="typing"></span><br/><br/>
+                <a href="prompt.html">
+                    <button class="button" id="button">Press Me</button>
+                </a>
             </div>
         </div>
     </div>
+    <audio autoplay loop id="gymno">
+        <source src="assets/song2.mp3">
+    </audio>
+    <script>
+        document.getElementById('gymno').volume = 2;
+    </script>
     <script src="app.js"></script>
+    <script src="confetti.js"></script>
+    
 </body>
 </html>
