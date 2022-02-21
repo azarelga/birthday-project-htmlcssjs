@@ -47,7 +47,7 @@ body{
     display: inline-block;
     font-size: 12px;
     border-radius: 4px;
-    opacity: 0;
+    visibility: hidden;
     cursor: pointer;
 }
 

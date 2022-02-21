@@ -15,15 +15,15 @@
  */
 
 const colorBg = 'hotpink'; // #ff69b4
-const colorTypo = '#1c1b1b'; 
+const colorTypo = 'white'; 
 
 const nearDist = 0.1;
 const farDist = 10000;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-	70,
-	2,
+	75,
+	1.1,
 	nearDist,
 	farDist
 	);
@@ -31,20 +31,20 @@ const camera = new THREE.PerspectiveCamera(
 	const renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setClearColor(colorBg);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth, window.innerHeight);
-	document.querySelector("#canvas-wrapper").appendChild(renderer.domElement);
+	renderer.setSize(window.innerWidth/2, window.innerHeight);
+	document.querySelector("#canvas").appendChild(renderer.domElement);
 	
 	const light = new THREE.DirectionalLight(0xffdffd, 1);
 	light.position.set(-15, 0, 70);
 	scene.add(light);
 	
-	// CREATE TYPOGRAPHY
+	// CREATE TYPOGRAPHYl
 	const group = new THREE.Group();
 	const typoLoader = new THREE.FontLoader();
 	const createTypo = font => {
-		const word = `happy
+		const word = `  happy
 birthday
-jeki!!!`;
+   jeki!!!`;
 
 	const typoSize = 120;
 	const typoHeight =  Math.round(typoSize / 4);
