@@ -18,7 +18,8 @@ var randomlinks=[
     'https://youtu.be/itydDYLA024?t=16',
     'https://youtu.be/B6PLiymSLmI',
     'http://corndog.io',
-    'https://corgiorgy.com'
+    'https://corgiorgy.com',
+    'shorturl.at/jqvSU'
 ];
 
 function randomlink(){
