@@ -27,7 +27,7 @@ const merits = [
     'an event where a person is seggsier',
     'an event where a person is hotter',
     'an event where a person is the best itzy member',
-    'an event where a person is the best 19 yo girlfriend ive everr had!!!',
+    'an event where a person is the best 19 yo girlfriend ever!!!',
     'now, please press this button below']
 let count = 0;
 let index = 0;
@@ -36,25 +36,25 @@ let letter = '';
 (function type(){
 
     currentText = merits[count];
-    if (count < 17) {
+    if (count < 18) {
         letter = currentText.slice(0,++index);
         if(letter.length === currentText.length){
             count++;
             index = 0;
-            setTimeout(type,900);
+            setTimeout(type,9);
         } 
         else {
-        setTimeout(type,100);}
+        setTimeout(type,1);}
     }
-    else if (count >= 17){
+    else if (count >= 18){
         letter = currentText.slice(0,++index);
         if(letter.length === currentText.length){
             count++;
             index = 26;
-            setTimeout(type,900);
+            setTimeout(type,9);
         } 
         else {
-        setTimeout(type,100);
+        setTimeout(type,1);
         }
     }
     document.querySelector('.typing').textContent = letter;
