@@ -21,8 +21,14 @@
             </div>
         </div>
     </div>
-    <audio autoplay loop id="gymno" src="assets/intro.mp3" type="audio/mpeg">
+	<audio autoplay loop id="gymno">
+		<source src="assets/intro.mp3" type="audio/mpeg">
+		<source src="assets/intro.ogg" type="audio/ogg">
     </audio>
     <script src="app.js"></script>
+	<script>
+		var amount = document.getElementById("gymno");
+		amount.volume=2;
+	</script>
 </body>
 </html>
