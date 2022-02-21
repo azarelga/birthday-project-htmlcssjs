@@ -17,9 +17,10 @@ var randomlinks=[
     'https://youtu.be/9Y4RrAVexrg?t=66',
     'https://youtu.be/itydDYLA024?t=16',
     'https://youtu.be/B6PLiymSLmI',
-    'http://corndog.io',
+    'https://yourmetricbirthday.com/february-22-2003',
+    'https://agegeek/february-22-2003',
     'https://corgiorgy.com',
-    'shorturl.at/jqvSU'
+    'https://shorturl.at/jqvSU'
 ];
 
 function randomlink(){
