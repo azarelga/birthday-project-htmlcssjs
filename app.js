@@ -41,20 +41,20 @@ let letter = '';
         if(letter.length === currentText.length){
             count++;
             index = 0;
-            setTimeout(type,9);
+            setTimeout(type,900);
         } 
         else {
-        setTimeout(type,1);}
+        setTimeout(type,100);}
     }
     else if (count >= 18){
         letter = currentText.slice(0,++index);
         if(letter.length === currentText.length){
             count++;
             index = 26;
-            setTimeout(type,9);
+            setTimeout(type,900);
         } 
         else {
-        setTimeout(type,1);
+        setTimeout(type,100);
         }
     }
     document.querySelector('.typing').textContent = letter;
