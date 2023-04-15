@@ -44,7 +44,7 @@ const camera = new THREE.PerspectiveCamera(
 	const createTypo = font => {
 		const word = `  happy
 birthday
-   jeki!!!`;
+   [blanks]!!!`;
 
 	const typoSize = 120;
 	const typoHeight =  Math.round(typoSize / 4);

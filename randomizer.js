@@ -6,7 +6,6 @@ var randomlinks=[
     'https://youtu.be/-0M6pw233DA',
     'https://cat-bounce.com/',
     'https://youtu.be/zPyg4N7bcHM',
-    'https://ask.fm/zakiyazahiras',
     'https://youtu.be/gX6KaQInDrs',
     'https://youtu.be/4qcKcwERFuY',
     'https://youtu.be/oAQmRO42UHc',
@@ -17,10 +16,7 @@ var randomlinks=[
     'https://youtu.be/9Y4RrAVexrg?t=66',
     'https://youtu.be/itydDYLA024?t=16',
     'https://youtu.be/B6PLiymSLmI',
-    'https://yourmetricbirthday.com/february-22-2003',
-    'https://agegeek.com/february-22-2003',
     'https://corgiorgy.com',
-    'https://shorturl.at/jqvSU',
     'https://youtu.be/66RM4Mv6ON4',
     'https://youtu.be/b4t49LpC30I'
 ];
