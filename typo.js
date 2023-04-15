@@ -31,7 +31,7 @@ const camera = new THREE.PerspectiveCamera(
 	const renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setClearColor(colorBg);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth/2, window.innerHeight);
 	document.querySelector("#canvas").appendChild(renderer.domElement);
 	
 	const light = new THREE.DirectionalLight(0xffdffd, 1);
