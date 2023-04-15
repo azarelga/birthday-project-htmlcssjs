@@ -23,7 +23,7 @@ const farDist = 10000;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
 	75,
-	1.1,
+	1,
 	nearDist,
 	farDist
 	);
@@ -31,7 +31,7 @@ const camera = new THREE.PerspectiveCamera(
 	const renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setClearColor(colorBg);
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth/2, window.innerHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.querySelector("#canvas").appendChild(renderer.domElement);
 	
 	const light = new THREE.DirectionalLight(0xffdffd, 1);
@@ -42,21 +42,19 @@ const camera = new THREE.PerspectiveCamera(
 	const group = new THREE.Group();
 	const typoLoader = new THREE.FontLoader();
 	const createTypo = font => {
-		const word = `  happy
-birthday
-   [blanks]!!!`;
+		const word = `happy
+birthday!!!`;
 
-	const typoSize = 120;
-	const typoHeight =  Math.round(typoSize / 4);
+	const typoSize = 100;
 	const typoProperties = {
 		font: font,
 		size: typoSize,
-		height: 5,
+		height: 0,
 		curveSegments: 20,
 		bevelEnabled: false,
 		bevelThickness: 0.1,
 		bevelSize: 0.5,
-		bevelOffset: 0,
+		bevelOffset: 2,
 		bevelSegments: 10
 	};
 	const textMesh = new THREE.Mesh();
@@ -120,7 +118,7 @@ const render = () => {
 	camera.position.y += (mouseY - camera.position.y) * ct;
 	camera.lookAt(scene.position);
 
-	const r = Date.now() * 0.0018;
+	const r = Date.now() * 0.0010;
 	const rot = Math.sin(r) * 0.12;
 	group.rotation.x = rot*1.4;
 	group.rotation.y = rot;

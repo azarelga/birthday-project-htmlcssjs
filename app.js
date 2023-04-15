@@ -30,7 +30,7 @@ let letter = '';
 (function type(){
 
     currentText = merits[count];
-    if (count < 18) {
+    if (count < 12) {
         letter = currentText.slice(0,++index);
         if(letter.length === currentText.length){
             count++;
@@ -40,7 +40,7 @@ let letter = '';
         else {
         setTimeout(type,100);}
     }
-    else if (count >= 18){
+    else if (count >= 12){
         letter = currentText.slice(0,++index);
         if(letter.length === currentText.length){
             count++;
